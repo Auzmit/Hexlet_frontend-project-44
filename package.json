@@ -1,4 +1,8 @@
 {
+  "bin": {
+		"brain-games": "bin/brain-games.js"
+  },
+  "type": "module",
   "name": "@hexlet/code",
   "version": "1.0.0",
   "description": "[![Actions Status](https://github.com/Auzmit/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/Auzmit/frontend-project-44/actions)",
@@ -9,3 +13,4 @@
   "author": "",
   "license": "ISC"
 }
+
