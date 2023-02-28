@@ -1,12 +1,15 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
 
-export default function getUsernameAndGreetHim() {
+export default function cliGames() {
 
 	console.log('Welcome to the Brain Games!');
 
-	//Get User's name and greet him using library "readline-sync"
-	let username = readlineSync.question('May I have your name?\n')
+	//Get User's name (using library "readline-sync")
+	let username = readlineSync.question('May I have your name?\n');
+
 	// Wait for user's response.
-	console.log('Hi, ' + username + '!');
+
+	return username;	
+	
 }

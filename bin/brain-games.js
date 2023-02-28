@@ -1,4 +1,6 @@
 #!/usr/bin/env node
-import getUsernameAndGreetHim from '../src/cli.js';
+import cliGames from '../src/cli.js';
 
-getUsernameAndGreetHim();
+//Get User's name and greet him
+let username = cliGames();
+console.log('Hi, ' + username + '!');
