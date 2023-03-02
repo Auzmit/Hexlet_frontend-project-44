@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import cliGames from '../src/cli.js';
+/* import {readUserAnswer} from '../src/index.js'; */
 import readlineSync from 'readline-sync';
 
 //Get User's name and greet him, and explain the rules of the "...-calc" game
@@ -17,7 +18,7 @@ for (let i = 1; i <= 3; i+=1) {
   const intRandomNumber_1 = getRandomInt();
   const intRandomNumber_2 = getRandomInt();
 
-  //Create qrray with Math. signs and randomly take one of them
+  //Create array with Math. signs and randomly take one of them
   let arrMatSigns = ['+', '-', '*'];
   const intRandomNumber_from1to3 = Math.floor(Math.random() * 3);
   const strRandomMathSign = arrMatSigns[intRandomNumber_from1to3];

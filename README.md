@@ -11,3 +11,6 @@ https://asciinema.org/a/563896
 
 ### asciinema for 6 stage
 https://asciinema.org/a/563924
+
+### asciinema for 7 stage
+https://asciinema.org/a/564079
