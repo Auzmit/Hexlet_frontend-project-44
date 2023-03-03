@@ -3,14 +3,14 @@ import cliGames from '../src/cli.js';
 /* import {readUserAnswer} from '../src/index.js'; */
 import readlineSync from 'readline-sync';
 
-//Get User's name and greet him, and explain the rules of the "...-calc" game
+//Get User's name and greet him, and explain the rules of the "brain-calc" game
 let username = cliGames();
 console.log('Hello, ' + username + '!');
 console.log('What is the result of the expression?');
 
 for (let i = 1; i <= 3; i+=1) {
   
-  //Randomize the two integer numbers in range from 0 to max (including 0, but not - max)
+  //Randomize the two integer numbers in range from 0 to max (including 0, but not max)
   function getRandomInt() {
     let max = 100;
     return Math.floor(Math.random() * max);

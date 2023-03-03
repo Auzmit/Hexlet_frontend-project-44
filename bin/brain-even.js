@@ -1,15 +1,16 @@
 #!/usr/bin/env node
 import cliGames from '../src/cli.js';
+/* import {readUserAnswer} from '../src/index.js'; */
 import readlineSync from 'readline-sync';
 
-//Get User's name and greet him, and explain the rules of the "...-even" game
+//Get User's name and greet him, and explain the rules of the "brain-even" game
 let username = cliGames();
 console.log('Hello, ' + username + '!');
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
 for (let i = 1; i <= 3; i+=1) {
   
-  //Randomize the integer number in range from 0 to max (including 0, but not - max)
+  //Randomize the integer number in range from 0 to max (including 0, but not max)
   function getRandomInt() {
     let max = 100;
     return Math.floor(Math.random() * max);

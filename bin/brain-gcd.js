@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 import cliGames from '../src/cli.js';
+/* import {readUserAnswer} from '../src/index.js'; */
 import readlineSync from 'readline-sync';
 
-//Get User's name and greet him, and explain the rules of the "...-gcd" game
+//Get User's name and greet him, and explain the rules of the "brain-gcd" game
 let username = cliGames();
 console.log('Hello, ' + username + '!');
 console.log('Find the greatest common divisor of given numbers.');
