@@ -3,4 +3,4 @@ import cliGames from '../src/cli.js';
 
 //Get User's name and greet him
 let username = cliGames();
-console.log('Hi, ' + username + '!');
+console.log('Hello, ' + username + '!');
