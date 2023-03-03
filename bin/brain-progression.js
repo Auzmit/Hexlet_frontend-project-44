@@ -15,7 +15,7 @@ for (let i = 1; i <= 3; i+=1) {
     const intStartOfProg = Math.floor(Math.random() * 55);
   //Second - step of progression (it's in range from 2 to 5 (including 2 and 5)) 
     const intStepOfProg = Math.ceil(Math.random() * 4) + 1;
-  //Third - number of missing number (it's in range from 0 to 10 (including 1, but not 10))
+  //Third - array order of missing number (it's in range from 0 to 10 (including 0, but not 10))
     const intNumberOfMissNum = Math.floor(Math.random() * 10);
 
   //Create array - progression
@@ -30,9 +30,6 @@ for (let i = 1; i <= 3; i+=1) {
   }
 
   console.log('Question:', arrProg.join(' '));
-  /* for (let i = 0; i <= 9; i += 1) {
-    console.log(arrProg[i]);
-  } */
   
   //Transfer correct answer (intMissNum) into string for we can compare it with the userAnswer
   let strCorrectAnswer = String(intMissNum);

@@ -3,6 +3,7 @@
     "brain-calc": "bin/brain-calc.js",
     "brain-even": "bin/brain-even.js",
     "brain-games": "bin/brain-games.js",
+    "brain-prime.js": "bin/brain-prime.js",
     "brain-gcd": "bin/brain-gcd.js",
     "brain-progression": "bin/brain-progression.js"
   },

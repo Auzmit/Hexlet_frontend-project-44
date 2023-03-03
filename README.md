@@ -17,3 +17,6 @@ https://asciinema.org/a/564079
 
 ### asciinema for 8 stage
 https://asciinema.org/a/564419
+
+### asciinema for 9 stage
+https://asciinema.org/a/564447
