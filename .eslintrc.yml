@@ -11,4 +11,5 @@ rules:
     - error
     - ignorePackages
     - js: always
+  camelcase: off
   no-console: 0
