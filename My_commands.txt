@@ -1,6 +1,0 @@
-make publish (npm publish --dry-run)
-
-asciinema rec
-
-### exit from "git diff"
-ctrl + z

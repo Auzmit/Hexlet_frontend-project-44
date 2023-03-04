@@ -1,0 +1,18 @@
+make publish (npm publish --dry-run)
+
+asciinema rec
+
+# exit from "git diff"
+ctrl + z
+
+# Init eslint again if all crashed
+npm init @eslint/config
+# Answers for questions here:
+https://ru.hexlet.io/courses/js-setup-environment/lessons/linting/theory_unit
+
+# eslint check
+# My way:
+npx eslint .
+# Hexlet way:
+npx eslint --no-eslintrc --config .eslintrc.yml .
+# What's the difference - ya hz (the same number of errors in both ways)

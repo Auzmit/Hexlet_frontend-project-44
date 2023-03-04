@@ -16,14 +16,12 @@ brain-prime:
 brain-progression:
 	node bin/brain-progression.js
 
-lint:
-	npx eslint
-
 install:
 	npm ci
  
 publish:
 	npm publish --dry-run
 	
-# Если, например, существует и задача "test" и файл "test", то нужно вписать "test" в ".PHONY" , чтобы цель выполнялась
+# Если, например, существует и задача "test" и файл "test",
+# то нужно вписать "test" в ".PHONY" , чтобы цель выполнялась
 .PHONY: test,
