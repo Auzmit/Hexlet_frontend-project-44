@@ -9,7 +9,7 @@ console.log(`Hello, ${username}!`);
 console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
 
 for (let i = 1; i <= 3; i += 1) {
-  const intRndNum = getRandomInt_Floor(2);
+  const intRndNum = getRandomInt_Floor(100);
   console.log('Question:', intRndNum);
 
   // Check if the intRndNum is prime
@@ -20,7 +20,7 @@ for (let i = 1; i <= 3; i += 1) {
       break;
     }
   }
-  if (intRndNum === 1) {
+  if ((intRndNum === 1) || (intRndNum === 0)) {
     strCorrectAnswer = 'no';
   }
 
