@@ -9,7 +9,7 @@ console.log(`Hello, ${username}!`);
 console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
 
 for (let i = 1; i <= 3; i += 1) {
-  const intRndNum = getRandomInt_Floor(100);
+  const intRndNum = getRandomInt_Floor(2);
   console.log('Question:', intRndNum);
 
   // Check if the intRndNum is prime
@@ -19,6 +19,9 @@ for (let i = 1; i <= 3; i += 1) {
       strCorrectAnswer = 'no';
       break;
     }
+  }
+  if (intRndNum === 1) {
+    strCorrectAnswer = 'no';
   }
 
   // Check if the user correctly determined the parity of the randomized number
