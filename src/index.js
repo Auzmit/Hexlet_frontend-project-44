@@ -2,12 +2,12 @@
 /* import readlineSync from 'readline-sync'; */
 
 // Randomize the integer number (including 0, but not max)
-export function getRandomInt_Floor(max) {
+export function getRandomIntFloor(max) {
   return Math.floor(Math.random() * max);
 }
 
 // Randomize the integer number (including 1 and max)
-export function getRandomInt_Ceil(max) {
+export function getRandomIntCeil(max) {
   return Math.ceil(Math.random() * max);
 }
 

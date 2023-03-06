@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
 import cliGames from '../src/cli.js';
-import { getRandomInt_Floor } from '../src/index.js';
+import { getRandomIntFloor } from '../src/index.js';
 
 // Get User's name and greet him, and explain the rules of the "brain-even" game
 const username = cliGames();
@@ -9,7 +9,7 @@ console.log(`Hello, ${username}!`);
 console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
 
 for (let i = 1; i <= 3; i += 1) {
-  const intRndNum = getRandomInt_Floor(100);
+  const intRndNum = getRandomIntFloor(100);
   console.log('Question:', intRndNum);
 
   // Check if the intRndNum is prime

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
 import cliGames from '../src/cli.js';
-import { getRandomInt_Floor, getRandomInt_Ceil } from '../src/index.js';
+import { getRandomIntFloor, getRandomIntCeil } from '../src/index.js';
 
 // Get User's name and greet him, and explain the rules of the "brain-progression" game
 const username = cliGames();
@@ -11,14 +11,14 @@ console.log('What number is missing in the progression?');
 for (let i = 1; i <= 3; i += 1) {
   // Randomize three integer numbers
   // First - starting number of progression (it's in range from 0 to 100 (including 0, but not max))
-  const intStartOfProg = getRandomInt_Floor(55);
+  const intStartOfProg = getRandomIntFloor(55);
   // Second - step of progression (it's in range from 2 to 5 (including 2 and 5))
-  const intStepOfProg = getRandomInt_Ceil(4) + 1;
+  const intStepOfProg = getRandomIntCeil(4) + 1;
   // Third - array order of missing number (it's in range from 0 to 10 (including 0, but not 10))
-  const intNumberOfMissNum = getRandomInt_Floor(10);
+  const intNumberOfMissNum = getRandomIntFloor(10);
 
   // Create array - progression
-  let arrProg = [];
+  const arrProg = [];
   let intMissNum = 0;
   for (let j = 0; j <= 9; j += 1) {
     arrProg[j] = intStartOfProg + intStepOfProg * j;

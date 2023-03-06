@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
 import cliGames from '../src/cli.js';
-import { getRandomInt_Floor } from '../src/index.js';
+import { getRandomIntFloor } from '../src/index.js';
 
 // Get User's name and greet him, and explain the rules of the "brain-calc" game
 const username = cliGames();
@@ -9,24 +9,24 @@ console.log(`Hello, ${username}!`);
 console.log('What is the result of the expression?');
 
 for (let i = 1; i <= 3; i += 1) {
-  const intRndNum_1 = getRandomInt_Floor(100);
-  const intRndNum_2 = getRandomInt_Floor(100);
+  const intRndNum1 = getRandomIntFloor(100);
+  const intRndNum2 = getRandomIntFloor(100);
 
   // Create array with Math. signs and randomly take one of them
   const arrMathSigns = ['+', '-', '*'];
-  const intRndNum_from0to2 = Math.floor(Math.random() * 3);
-  const strRndMathSign = arrMathSigns[intRndNum_from0to2];
+  const intRndNumfrom0to2 = Math.floor(Math.random() * 3);
+  const strRndMathSign = arrMathSigns[intRndNumfrom0to2];
 
-  console.log('Question:', intRndNum_1, strRndMathSign, intRndNum_2);
+  console.log('Question:', intRndNum1, strRndMathSign, intRndNum2);
 
   // Find correct answer
   let intCorrectAnswer = 0.1;
-  if (intRndNum_from0to2 === 0) {
-    intCorrectAnswer = intRndNum_1 + intRndNum_2;
-  } else if (intRndNum_from0to2 === 1) {
-    intCorrectAnswer = intRndNum_1 - intRndNum_2;
+  if (intRndNumfrom0to2 === 0) {
+    intCorrectAnswer = intRndNum1 + intRndNum2;
+  } else if (intRndNumfrom0to2 === 1) {
+    intCorrectAnswer = intRndNum1 - intRndNum2;
   } else {
-    intCorrectAnswer = intRndNum_1 * intRndNum_2;
+    intCorrectAnswer = intRndNum1 * intRndNum2;
   }
   const strCorrectAnswer = String(intCorrectAnswer);
 
